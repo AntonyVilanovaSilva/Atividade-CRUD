@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DbTarefaModelStoreContainer" CdmEntityContainer="DbTarefaEntities">
+    <EntitySetMapping Name="TB_Tarefa">
+      <EntityTypeMapping TypeName="DbTarefaModel.TB_Tarefa">
+        <MappingFragment StoreEntitySet="TB_Tarefa">
+          <ScalarProperty Name="IDTarefa" ColumnName="IDTarefa" />
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="DataTarefa" ColumnName="DataTarefa" />
+          <ScalarProperty Name="IDUsu" ColumnName="IDUsu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_Usuario">
+      <EntityTypeMapping TypeName="DbTarefaModel.TB_Usuario">
+        <MappingFragment StoreEntitySet="TB_Usuario">
+          <ScalarProperty Name="IDUsu" ColumnName="IDUsu" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="Senha" ColumnName="Senha" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
